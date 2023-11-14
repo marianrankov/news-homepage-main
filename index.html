@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body id="body">
+
+  <header>
+    <img id="logo" src="./assets/images/logo.svg" alt="company logo">
+    <div class="links-container">
+      <a href="_blank" class="header-links">Home</a>
+      <a href="_blank" class="header-links">New</a>
+      <a href="_blank" class="header-links">Popular</a>
+      <a href="_blank" class="header-links">Trending</a>
+      <a href="_blank" class="header-links">Categories</a>
+      <img id="burger" src="./assets/images/icon-menu.svg" onclick="showMenu()">
+    </div>
+  </header>
+
+
+  <div class="mobile" id="mobile">
+    <div class="black">
+      
+    </div>
+    <div class="mobile-menu">
+      <img src="./assets/images/icon-menu-close.svg" alt="close-button" onclick="hideMenu()">
+      <div class="mobile-menu-container">
+        <a href="_blank" class="header-links-mobile">Home</a>
+        <a href="_blank" class="header-links-mobile">New</a>
+        <a href="_blank" class="header-links-mobile">Popular</a>
+        <a href="_blank" class="header-links-mobile">Trending</a>
+        <a href="_blank" class="header-links-mobile">Categories</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="main-article">
+      <img id="main-img" src="./assets/images/image-web-3-desktop.jpg">
+      <div class="article-container">
+        <div class="article-heading">
+          The Bright Future of Web 3.0?
+        </div>
+        <div class="article-preview">
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+            hands of the people.
+            But is it really fulfilling its promise?</p>
+          <a href="-blank" id="article-button"> Read more</a>
+        </div>
+      </div>
+    </div>
+    <div class="highlights">
+      <h1 id="section-heading">New</h1>
+      <div class="highlights-articles" id="article-1">
+        <h2 class="news-heading">Hydrogen VS Electric Cars</h2>
+        <p class="news-description">Will hydrogen-fueled cars ever catch up to EVs?</p>>
+      </div>
+      <div class="highlights-articles" id="article-2">
+        <h2 class="news-heading">The Downsides of AI Artistry</h2>
+        <p class="news-description">What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <div class="highlights-articles" id="article-3">
+        <h2 class="news-heading">Is VC Funding Drying Up?</h2>
+        <p class="news-description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sugested">
+    <div class="box" id="box-1">
+      <div class="img-container">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="retro computer in neon background">
+      </div>
+      <div class="text-container">
+        <p class="number-box">01</p>
+        <h2 class="sugested-heading">Reviving Retro PCs</h2>
+        <p class="sugested-text">What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="box" id="box-2">
+      <div class="img-container">
+        <img src="./assets/images/image-top-laptops.jpg" alt="futuristic-keybord-with-red-baclight">
+      </div>
+      <div class="text-container">
+        <p class="number-box">02</p>
+        <h2 class="sugested-heading">Top 10 Laptops of 2022</h2>
+        <p class="sugested-text">Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="box" id="box-3">
+      <div class="img-container">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="hand-and-joystick-on-grey-background">
+      </div>
+      <div class="text-container">
+        <p class="number-box">03</p>
+        <h2 class="sugested-heading">The Growth of Gaming</h2>
+        <p class="sugested-text">How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Marian Rankov</a>.
+  </div>
+</body>
+<script>
+  const burger = document.getElementById("burger");
+  const mobile = document.getElementById("mobile");
+  const html = document.getElementById("html");
+  const body = document.getElementById("body");
+
+  function showMenu() {
+    mobile.style.display = "flex";
+    html.style.overflow = "hidden";
+    body.style.overflow = "hidden";
+
+  }
+
+  function hideMenu() {
+    mobile.style.display = "none";
+    html.style.overflow = "auto";
+    body.style.overflow = "auto";
+  }
+</script>
+
+</html>
